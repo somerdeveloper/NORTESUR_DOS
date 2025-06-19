@@ -10,93 +10,125 @@
 </head>
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-
-    <!-- Logo / Marca -->
-    <a class="navbar-brand" href="#">
-      <i class="bi bi-house-door-fill"></i> NORTESUR
-    </a>
-
-    <!-- Botón hamburguesa para pantallas pequeñas -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">NORTESUR</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Contenedor del menú colapsable -->
     <div class="collapse navbar-collapse" id="menuPrincipal">
-      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">
-            <i class="bi bi-house-door"></i> Home
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="mercado.html">
-            <i class="bi bi-envelope"></i> Mercado
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="servicio.html">
-            <i class="bi bi-envelope"></i> Servicios
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="nosotros.html">
-            <i class="bi bi-envelope"></i> Nosotros
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="contacto.html">
-            <i class="bi bi-envelope"></i> Contacto
-          </a>
-        </li>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="mercado.html">Mercado</a></li>
+        <li class="nav-item"><a class="nav-link active" href="servicio.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
       </ul>
-
-      <!-- Formulario de búsqueda -->
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-          <i class="bi bi-search"></i>
-        </button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </div>
   </div>
 </nav>
- 
 
-  <!-- Botoner conacto -->
-  <div class="container text-center my-4">
-	
-	<div class="container text-center my-4">
-		
-		<!-- Texto -->
-		<div class="col-md-12">
-		  <h1 class="mb-12">Servicios</h1>
-		  <p class="lead">
-			Busca y ofrece servicios
-		  </p>
-		</div>
-		
-		
-	  </div>
+<!-- CONTENIDO -->
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Nuestros Servicios</h1>
+  <div class="row">
+
+    <!-- Servicio 1 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="img/parapente.jpg" class="card-img-top" alt="Parapente">
+        <div class="card-body">
+          <h5 class="card-title">Vuelo en Parapente</h5>
+          <p class="card-text">Disfruta una experiencia inolvidable desde las alturas.</p>
+          <p><strong>Precio:</strong> $35.000 CLP</p>
+          <p><strong>Condiciones:</strong> Edad mínima 12 años. Sujeto a clima.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Servicio 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="img/escalada.jpg" class="card-img-top" alt="Escalada">
+        <div class="card-body">
+          <h5 class="card-title">Tour de Escalada</h5>
+          <p class="card-text">Guiado por expertos en zonas cordilleranas.</p>
+          <p><strong>Precio:</strong> $45.000 CLP</p>
+          <p><strong>Condiciones:</strong> Incluye equipo básico. Nivel intermedio.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Servicio 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="img/SNOWBOARD.jpg" class="card-img-top" alt="Snowboard">
+        <div class="card-body">
+          <h5 class="card-title">Clases de Snowboard</h5>
+          <p class="card-text">Aprende a deslizarte en nieve con seguridad y técnica.</p>
+          <p><strong>Precio:</strong> $50.000 CLP</p>
+          <p><strong>Condiciones:</strong> Incluye instructor y equipamiento.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Servicio 4 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="img/trekking.jpg" class="card-img-top" alt="Trekking">
+        <div class="card-body">
+          <h5 class="card-title">Ruta de Trekking</h5>
+          <p class="card-text">Conoce senderos y miradores naturales únicos.</p>
+          <p><strong>Precio:</strong> $20.000 CLP</p>
+          <p><strong>Condiciones:</strong> Duración 4 hrs. Dificultad baja.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Servicio 5 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="img/camping.jpg" class="card-img-top" alt="Camping">
+        <div class="card-body">
+          <h5 class="card-title">Camping Familiar</h5>
+          <p class="card-text">Disfruta un fin de semana rodeado de naturaleza.</p>
+          <p><strong>Precio:</strong> $30.000 CLP</p>
+          <p><strong>Condiciones:</strong> Sitio por noche. Incluye agua potable.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Servicio 6 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img src="img/kayak.jpg" class="card-img-top" alt="Kayak">
+        <div class="card-body">
+          <h5 class="card-title">Paseo en Kayak</h5>
+          <p class="card-text">Navega por lagos y ríos en una aventura tranquila.</p>
+          <p><strong>Precio:</strong> $25.000 CLP</p>
+          <p><strong>Condiciones:</strong> Incluye guía e implementos de seguridad.</p>
+        </div>
+      </div>
+    </div>
 
   </div>
+</div>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4">
-	&copy; 2025 - NORTESUR. Todos los derechos reservados.
-  </footer>
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4">
+  &copy; 2025 - NORTESUR. Todos los derechos reservados.
+</footer>
 
-  <!-- Bootstrap 4.5 JS, jQuery, and Popper.js -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
