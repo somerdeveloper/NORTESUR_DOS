@@ -4,81 +4,115 @@
   <meta charset="UTF-8">
   <title>Mercado</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap 4.5 CSS -->
+  <!-- Bootstrap 4.5 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="icon" type="image/x-icon" href="img/favicon.png">
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-	<a class="navbar-brand" href="#">
-	  <i class="bi bi-house-door-fill"></i> NORTESUR
-	</a>
-	
-	<div class="collapse navbar-collapse">
-	  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-		<!-- Home -->
-		<li class="nav-item">
-		  <a class="nav-link active" aria-current="page" href="index.html">
-			<i class="bi bi-house-door"></i> Home
-		  </a>
-		</li>
-		<!-- mercado -->
-		<li class="nav-item">
-		  <a class="nav-link" href="mercado.html">
-			<i class="bi bi-envelope"></i> Mercado
-		  </a>
-		</li>
-		<!-- servicio -->
-		<li class="nav-item">
-		  <a class="nav-link" href="servicio.html">
-			<i class="bi bi-envelope"></i> Servicios
-		  </a>
-		</li>
-		<!-- nosotros -->
-		<li class="nav-item">
-		  <a class="nav-link" href="nosotros.html">
-			<i class="bi bi-envelope"></i> Nosotros
-		  </a>
-		</li>
-		<!-- Contacto -->
-		<li class="nav-item">
-		  <a class="nav-link" href="contacto.html">
-			<i class="bi bi-envelope"></i> Contacto
-		  </a>
-		</li>
-	  </ul>
-	  <!-- Buscar -->
-	  <form class="d-flex" role="search">
-		<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-		<button class="btn btn-outline-success" type="submit">
-		  <i class="bi bi-search"></i>
-		</button>
-	  </form>
-	</div>
+    <a class="navbar-brand" href="#">NORTESUR</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuPrincipal">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link active" href="mercado.html">Mercado</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicio.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 
-  <!-- Botoner conacto -->
-  <div class="container text-center my-4">
-	
-	<div class="col-md-12">
-	  <h1 class="mb-12">MARKETPLACE</h1>
-	  <p class="lead">
-		Compra, Vende, Publica, Arrienda, Explora productos en marketplace 
-	  </p>
-	</div>
+<!-- CONTENIDO PRINCIPAL -->
+<div class="container mt-4">
+  <h1 class="text-center mb-4">MARKETPLACE</h1>
+
+  <!-- TABS DE NAVEGACIÓN -->
+  <ul class="nav nav-tabs" id="tabMercado" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="buscar-tab" data-toggle="tab" href="#buscar" role="tab" aria-controls="buscar" aria-selected="true">Buscar</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="comprar-tab" data-toggle="tab" href="#comprar" role="tab" aria-controls="comprar" aria-selected="false">Comprar</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="vender-tab" data-toggle="tab" href="#vender" role="tab" aria-controls="vender" aria-selected="false">Vender</a>
+    </li>
+  </ul>
+
+  <!-- CONTENIDO DE TABS -->
+  <div class="tab-content p-4 border border-top-0" id="tabContentMercado">
+
+    <!-- BUSCAR -->
+    <div class="tab-pane fade show active" id="buscar" role="tabpanel" aria-labelledby="buscar-tab">
+      <form class="form-inline justify-content-center">
+        <input class="form-control mr-2" type="search" placeholder="Buscar productos o servicios" aria-label="Buscar">
+        <button class="btn btn-outline-primary" type="submit">Buscar</button>
+      </form>
+    </div>
+
+    <!-- COMPRAR -->
+    <div class="tab-pane fade" id="comprar" role="tabpanel" aria-labelledby="comprar-tab">
+      <div class="row text-center">
+        <div class="col-md-6 mb-4">
+          <div class="border rounded p-3 h-100">
+            <h5>Market general</h5>
+            <p>Explora todos los productos publicados por usuarios y empresas.</p>
+            <a href="#" class="btn btn-sm btn-primary">Ver más</a>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="border rounded p-3 h-100">
+            <h5>Categorías</h5>
+            <p>Filtra por categorías como equipamiento, libros, experiencias y más.</p>
+            <a href="#" class="btn btn-sm btn-primary">Explorar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VENDER -->
+    <div class="tab-pane fade" id="vender" role="tabpanel" aria-labelledby="vender-tab">
+      <form>
+        <div class="form-group">
+          <label for="producto">Nombre del producto</label>
+          <input type="text" class="form-control" id="producto" placeholder="Ej: Tabla de snowboard">
+        </div>
+        <div class="form-group">
+          <label for="descripcion">Descripción</label>
+          <textarea class="form-control" id="descripcion" rows="3" placeholder="Incluye detalles, estado, etc."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="precio">Precio (CLP)</label>
+          <input type="number" class="form-control" id="precio" placeholder="Ej: 25000">
+        </div>
+        <div class="form-group">
+          <label for="imagen">Imagen</label>
+          <input type="file" class="form-control-file" id="imagen">
+        </div>
+        <button type="submit" class="btn btn-success">Publicar</button>
+      </form>
+    </div>
+
   </div>
+</div>
 
-  <footer class="bg-dark text-white text-center py-4">
-	&copy; 2025 - NORTESUR. Todos los derechos reservados.
-  </footer>
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4 mt-5">
+  &copy; 2025 - NORTESUR. Todos los derechos reservados.
+</footer>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- SCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>

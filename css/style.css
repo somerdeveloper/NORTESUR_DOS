@@ -1,0 +1,100 @@
+/* ====== Colores de identidad NORTESUR ====== */
+:root {
+  --principal: #DCAD07;
+  --texto: #000000;
+  --suave: #E1CA73;
+  --fondo: #E0DEDD;
+  --oscuro: #1a1a1a;
+}
+
+/* ====== Estilos globales ====== */
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ====== Navbar ====== */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: var(--texto) !important;
+}
+
+.navbar-nav .nav-link {
+  color: var(--texto) !important;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: var(--suave);
+  border-radius: 5px;
+  color: black !important;
+}
+
+/* ====== Barra de búsqueda ====== */
+form[role="search"] input {
+  border-radius: 20px;
+  padding-left: 15px;
+}
+
+form[role="search"] button {
+  margin-left: 5px;
+  border-radius: 20px;
+  background-color: var(--principal);
+  border: none;
+  color: black;
+  transition: background 0.3s ease;
+}
+
+form[role="search"] button:hover {
+  background-color: var(--suave);
+}
+
+/* ====== Carrusel ====== */
+.carousel-inner img {
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.carousel-indicators li {
+  background-color: var(--principal);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+/* ====== Texto de inicio ====== */
+.container h1 {
+  color: var(--texto);
+  font-size: 2.5rem;
+  margin-top: 30px;
+}
+
+.container p.lead {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* ====== Footer ====== */
+footer {
+  background-color: var(--oscuro);
+  color: white;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--suave);
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: var(--principal);
+}
