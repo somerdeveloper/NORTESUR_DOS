@@ -98,3 +98,12 @@ footer a {
 footer a:hover {
   color: var(--principal);
 }
+
+.nav-link i {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover i {
+  transform: scale(1.2);
+  color: #28a745; /* verde bootstrap */
+}
